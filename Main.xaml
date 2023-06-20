@@ -1,0 +1,210 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="638,1352" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="74">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="642,1287" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Online Grocery Ordering Bot&#xA;&#xA;Develop an Online Grocery Ordering Bot that downloads a .csv file from the grocery ordering web page; Add all the food from the.CSV file to the cart on the web portal; Place your order; " sap:VirtualizedContainerService.HintSize="580,424" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="DT1" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="468,241" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ueab:ExcelProcessScopeX.Body>
+          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+            </ActivityAction.Argument>
+            <ui:ReadCsvFile DataTable="[DT]" Delimitator="Comma" DisplayName="Read CSV" FilePath="ShoppingList.csv" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+          </ActivityAction>
+        </ueab:ExcelProcessScopeX.Body>
+      </ueab:ExcelProcessScopeX>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Shopping List" sap:VirtualizedContainerService.HintSize="580,712" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="4f14449b-d8e7-4967-b1c1-fb332cc1ba7e" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,495" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="484,198" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT myInput'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="4f14449b-d8e7-4967-b1c1-fb332cc1ba7e" Text="[CurrentRow(1).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-ShoppingList.html#" CvElementArea="139, 368, 1092, 39" CvTextArea="154, 380, 246, 18" CvTextArgument="Enter Grocery Item to Add to List..." CvType="InputBox" DesignTimeRectangle="143, 370, 1080, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT myInput'" FullSelectorArgument="&lt;webctrl id='myInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='myInput' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="eaa2e3be-37b2-4b06-97b6-3b27836312e1" ImageBase64="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" InformativeScreenshot="b8210164416400201742e4d5befd4e3b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Shopping List' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add Item'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f14449b-d8e7-4967-b1c1-fb332cc1ba7e" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-ShoppingList.html#" CvElementArea="142, 425, 142, 44" CvTextArea="176, 439, 72, 15" CvTextArgument="Add Item" CvType="Button" DesignTimeRectangle="143, 428, 140, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Add Item'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn btn-success btn-lg' aaname='Add Item' check:innerText='Add Item' /&gt;" Guid="9f9fa1bc-add8-4735-88b1-322b6fddb82e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAsCAYAAACKTjG2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJqSURBVHhe7ZwxUuMwFIY5zvacYdu9EyUtHSeggD5HoGHgApnMpKRMqFJpUeJfluSnrHkZs9rZ75/5CmRFVvQ+S0Dhq0DIBUEgclEKgW5e7sL146/w4+EnwIToRnQkTxIoXrA+BFCTS5QEYueBuURXlCSQ1RGghYJA4EJBIHChIBC4UBAIXCgIBC4UBAIXCgKBCwWBwIWCQOBC+QcEug/Ph2GSMbuV0cfmaTfnM6uwHrqtN9b1iPp8hOfXrP31LewPb+G26Pt/oPQvUCzSMMdTtuHJ6mewqECb7bElINApVqceuH3/OE1wt51R6BIEWg6lc4HG4ysW97wQ06PO7F/taOvN1wVKUmfZv99XfYdUgo0PxKocZ5ij1dYjSt8CpWIPx5ae+skxVslTR4WYHIdlLhaoOf44X+uzyv7QGLeYSx8oXQuUFjs9xY3dIitcas+LOXm67YLOFejYZhxh2vHyotdt4/00Vi6/0dbpLqR0LNC4iFZB8oWdimb1tcdrSlkwR6BxHDO1xNlcz7YhkJM/HDfmLlIJVBahJdDYvqhAQz9LjLltPaF0K1BawDNJIjT+Iqp3K+uIWWIHao+DQN9Ea7c4kcRQ8f7m70DZWJN5Gd8Dgb6DVPysYDmpeOP1VDwrqQjnjxmfQEPiPZrHriEsAi1HWrxs4UtGEfIdqpDoc+HTz0URSok8/wdSe32/Y/tEovI7IBDAJwoCgQsFgcCFgkDgQkEgcKEgELhQEAhcKAgELhQEAhcKAoELBYHAhYJA4EJJAvGKO5iL+Yo7XrIJczFfshkTL7ATQYvoRi5PTCEQIV8NApELEsJvDx/XnxrSdmoAAAAASUVORK5CYII=" InformativeScreenshot="eec9db55f78e5a37905ed47af9855170.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Shopping List' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f14449b-d8e7-4967-b1c1-fb332cc1ba7e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-ShoppingList.html#" DesignTimeRectangle="138, 493, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT agreeToTermsYes'" FullSelectorArgument="&lt;webctrl id='agreeToTermsYes' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='agreeToTermsYes' tag='INPUT' type='radio' class='form-check-input' aaname='' /&gt;" Guid="c8daae94-b7b7-42bc-8b5e-fd6cdba9e6e7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACjSURBVDhPtZPBDcMgDEU7NXcGYArEkUVYgDmY4FcvqlFKIjVN3XexbL4+tkkecuB/Jr135ZwVY1QIYYvk1M84mNRalVJSa01jjK1GJKfO+cqbCYJSyis7h/PVaJrQKjddAd1+tGnCzLR8BXTojWnC8mwHn0CH3pgmvMI37PW+nbjsxOV14OfvxEDATbRsOyKSU18N4GACtMrMLO/Wv3MHBxPpCUNxRD3Cz+0BAAAAAElFTkSuQmCC" InformativeScreenshot="0bc19ef80dea48cc336b5d99a8891652.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Shopping List' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Yes" CvType="Text" DesignTimeRectangle="156, 488, 26, 24" ElementType="Text" FriendlyName="'Yes'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-check-label' aaname='                                 Yes                             ' check:innerText='Yes' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD/SURBVEhL7ZNhDoMgDIV3Lo4lR8Gb4EWMpzDxDh1QFEqLmW5jP8aXNNlA+uDxeMCP6MLN6MLNQOHZgFIK1LiEv4zVgj6bv8Fx4m3SQdzMceBgAzs40cG6X58jszoKKAPkXNENvqH3oHccLdXTfrYFjGDxMvoN7qXBrnEiQufzfgkWLrQcm2ED6gAbKxwJ8/m1xMOUjjHhZDkWWVBpksTi2hdCKAg7KilHN4oMeML3OL6HVPwuQxZ2S/zdlneTmkrF7T9KeBE3hM9Pwqi4d0kYm/AUhw2dvHNp/pqwg6WaBE4Kl9zrsrAHxVPRlNNXEUpIeUX4+3ThZnThZvybMMATQH1Ydpn+OwoAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit Order'" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4f14449b-d8e7-4967-b1c1-fb332cc1ba7e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-ShoppingList.html#" CvElementArea="142, 550, 142, 44" CvTextArea="161, 563, 105, 15" CvTextArgument="Submit Order" CvType="Button" DesignTimeRectangle="143, 552, 140, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit Order'" FullSelectorArgument="&lt;webctrl aaname='Submit Order' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit Order' tag='BUTTON' type='button' class='btn btn-primary btn-lg' check:innerText='Submit Order' /&gt;" Guid="9051e2e7-7dd8-4323-b295-f8bda8c709b1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAsCAYAAACKTjG2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMcSURBVHhe7ZwxbtwwEEVzgVw0rct0OceeIoBLHyHtdrlAGpcpFXLBT3yOhpQ0SyKA/T/wAJsSKYrzRKnaL5uiPBEJpDyVRqBvP7ft64/U+F2IPdmN7AinCpQPeJ2EsLBEVSDtPOIs2RWkCuSdKEQPRAKJEIgEEiEQCSRCIBJIhEAkkAiBSCARApFAIgQigUQIRAKJEMhyge5lfOTt1T9vSOrz/kz/I3rj5/a/2/bC5/b4VQbg/HHOu8gtjTFrrJkgSwWy8iCXJegVeBbe+BDihEC1yJ08M+dPK9DL7zJwyq20vaViPHJ1MVYL5HFSIL7Pe+rDx+oDdHYXc5BAvHhOUbDIvPi7vixQOg9/57j90mJzYbH4XtsDI2hzXsl7aqvnE5j/0XHMk+/tnsDfWI/6kOWkOfYEanZ36p85usYMkHWvMMhSYp9OcFUgL7viOMnfMja16FGBTL/d8YQVwJ1jOdbIYwOBBmuBnX50jVkgS7+B3G8DcyOXBaL+dcHLebxwKCgXZdfmFKWKgAcAc/DAOSkonqXOqVyL59g8VDSH2k5t6I81ZaFtW/caE0GWCvSAFwGholwVqHnSTQF3/Y7a/qdAZtxeu93BmleXzcE1ZoKsF4jgHQnCXBWoKZRpt8Vqxhq1RQXy+hmsAL3iHraX/kOBSt/eWDNBlgmE14T9dkB7VKBTO9BIFq/NG/+MQAnM3/1GouO4v25xO9fr7UC8XpbuNSaCLBOId5u6a1DBrUBcALR5ArEI9ltmiUApvddTpo6VYiWq95GCMbrFpTlUOZz7rutK/e3D2r3GRJB1rzC+eRu6MRZtF5w3Gitl93SPZPHaaHxPoEeov2V4Dym8a46KOxzHmavNoaQTQZZ/A/FT+IhTiLqT5KS/b3YBuMCpsLyAvJVPFSjRFNSZd4MVLsfpc1Rce836P4/lSMS75IcSSHxMEAkkQiASSIRAJJAIgUggEQKRQCIEIoFECEQCiRCIBBIhEAkkQiASSIRAJJAIgVSB9BN34izuT9zpRzbFWdwf2czJB7QTiR7ZDZYnpxFIUa5GAilPZNv+AZobAwdWHzZJAAAAAElFTkSuQmCC" InformativeScreenshot="c04e1e1a924cd3d9fe365e503708016d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Shopping List' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAbxSURBVFhHpZZtTFvnFcf9pWuypg3tmjVrGmLeEoMBG2PaJBDb2CkvyQJpvlXtFqRpmrSXT5s67a3pl0nTptXkhdAklEsCbZdG3VsrVe3AhhBCs3ZDi5ZAo21OA5hAOztNmrXhXj9n//M8j415SUe7I/30P+fh+vzPufcasC03YgF3zkzQ0zITrDLAyPshb3ImVEXTQS/NBDn3RmeClcZ0qHIvX6s/9v/HVIPbfjVU1com2kxcra2k6VovqBQM14sIVBpTAbddt/nsoTb2htlUGgWUWcYQ9dWAR0wFOPcgV8r1VMCj8AOfZ59uufzgyWES00a6sUfm8ww0cTZiuPZViLi/Qp1xrohNbV7m3ZiurXChUSzbIIO/QjDKUBlpE4r73BmdhE5ucys4V/X/HoI3h1EsvYFSjTaa9Kmm8W3aSDXPMJGmxkWTNS4BBaoer3ZhCMfSQ/Azh1FMGWU1z5ipxnIA1hq3kDUbaENlJHMxLmul49XljFDqii35LZnwucMZE4XI3khvo41Uzg1lzc1l7aIrOGO0KV3ZupAycWVLWVjbqnC/tNve/h3/nAmboqk2I7mNNpn57jfoxss9ZMYnKR3i5rskZl4la2QXWecqGcGaYn3LQ5JzHpx5BM5kTcNZ70PlS3uMbUYzjYUq1Fb6dknFxDKvr6YbJ3u0JVE8Kah/bBaYdGkqpU8xzNSLZL3jJ/OtChgxbgzhxjDQYbeqoajVXXAbu3M8LzxGzL4fBjO3io1Z39tSRuN1W+nWpTFp8JeYSd8yPqKqZ65R1T4N8qbwdYqOzsprxM0xst6ugZmLDZUOc85aDi3HEOVJGsG74H5hd4u7ZzdVANb+Jq80ZfCsBOv133TLxkein5AXhhmezso1R3ENh4h3K7PhMk1pljJOMXumpMXm7m42ALm6m4S7p1k8+Ys6ury5lN7b7BTMxGP1siFvV/l0UuLROse1eefv4C5xpC7sFdZZJ5lnS8hagtRwiWFzdTdHXScwwIkmTTO9useLIZwUe8RJN177nWy289kPqeJnyTlglNF0rutvdt6QnxFTJ4R5thhm2TgwlINS0NRQ8Yit/HhTsvz4LkpT1rWLth9spL/7yij2cIm4dWmUxuIWudF8MYnbkKTJJF7MTyZguBGGmiEJMSZInS1K2MqMr8JUImSu659/u5piVcWCN4lcnCXXTxNLA7P5dYLKoRH9QlpDRWSeKSSLQW4NaZV1gbCVdu6kUpiWGjuF1C6lj7Q30vkap2zSd/EWlaHpQtgoW7PP+zA0h3WmAEb5wjoDhgowTD7O5uABks7OHUKxk6BAqvjeUz5hxidoMpGi0p/8+zMxiscmProAkzwyB/Ogdgxhl7XKN3CdsJU8v+OvJR2NpNhBqGXuZH2+UQz2n5SbtHRcJycaO38MWD+Ful9dk59JTZ+CGRvlCnMwlyzJBrBecG4Oro/aHB0NRvGxRpqjQQ7gONYgOP/6a0/JZn/+1yyVwLwYKP1A5nP13HkvHhmH9fYWMk+vBw/B9CHBqnOyWE+vM2yOow0tIGPIyPpovQCsdPy8+ioe6rtJjh99QA6YSF0Izg/1/kdee228E4brYLYO2z6I/EGYK6y0Dqzba7MbgZziI/XJTUfqKRsH69E6wXi79ojR9/8hG//pwi0K/jJJm2CYzdeOfUjn/qlevInEu5QYLCFz4CuatTBdK9JqnX5A5hTNUX+WNz1X37rpuTraqJH5kTqRroHwGntE1/nfSgOOi5OWHIaZwEuaDr6m849bsN1aGD+QwWLt/7JUa2CNsPrXGNKcw9HeYN/Y/igxRVrTeRaisH27CPQ8Sa+MvkEX9R3hGL9+lYy/vUJP/P4H5O/wwWiNYkBr//0ytwbuFzIH2H7+f0ZFbaHWosPbKU1hG+ujxKaFhyWkNCT4ZxldwKk/FMHkS8pU6n3YVipZyFlTA/ct/k/ZHg7kFBwOxQraVOOCQyEqBKx8JpXP2ubX2Tze9TDM7hVm9F4YAlaAM605wormxLTl4sAQ9oK2YCzdMP9gkApA/qGgkHCu66XOL7+JZxxdjQHuAathuBqGUNSa2KJbvzB4iPwDtTHZ9EAt5R2sFQznafJY8XNWmR8I0ve7y8mM3I1N71EKrOgqmK4SnM9G7ob5ik83TwcPkbe/NgbIfiAg8vYHpMochvb9Kk9T076VLr+B5xxZxabQu+ZhRe6Kfbxc8+zAIM/YW2F+W/wYxi86Xs4ns28ljL4oMSMrBNdmBPStDGe+758n+G7khv3GhrCfNrT6Re6zPsF5btgn6+q2zTBZobmTzF4QuTNp9q5s/fj1z7H17QKD5Kz/9bYWDNCFAaLQJKCTp/A7PXJHItX7hZFU7wpjtu+OluVvbLP9F5lmWAkTeM7rAAAAAElFTkSuQmCC" InformativeScreenshot="8d56fbedb216783e6c8145e5b0ee2e11.jpg" Selector="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Shopping List' /&gt;" Title="Automation Anywhere Labs - Shopping List" Url="https://developer.automationanywhere.com/challenges/AutomationAnywhereLabs-ShoppingList.html#" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
